@@ -1,0 +1,135 @@
+@import url("../css/fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary-light: #afcedd;
+  --color-primary-dark: #234894;
+
+  --color-secondary: #696969;
+
+  --color-heading: #1e1e1e;
+
+  --color-button: #219f95;
+  --color-white: #fff;
+}
+
+body,
+* {
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--color-primary-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+/* Request */
+
+.request h1 {
+  font-size: 2.2rem;
+  margin: 0 2rem 4rem 0;
+}
+
+.request__items {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 7rem;
+  margin: 2rem;
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 7px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-size: 1.8rem;
+  padding: 0.7rem 1.5rem;
+  font-weight: 700;
+}
+
+.request__item {
+  max-width: 340px;
+}
+
+.request__item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  margin-right: 1rem;
+  color: var(--color-primary-dark);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.date__identifier {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+}
+
+.request__item h2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.request__item p {
+  margin-bottom: 2rem;
+}
+
+.request__item__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* button */
+
+.btn {
+  background-color: var(--color-button);
+  color: var(--color-white);
+  padding: 1.3rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .request__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .request__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
